@@ -4,6 +4,8 @@
 
 Soy una persona que realiza compras que le gustaría saber al realizar una compra los productos comprados anteriormente, para evitar comprar cosas que ya obtuve con anterioridad y ver posibles errores que cometo al realizar las compras.
 
+Para ello, el comprador debe de subir su ticket de compra que será analizado y de ahí se extraerá la información necesaria para solucionar el problema.
+
 ## Claves de github
 
 ![Clave Github](./documentos/clave_ssh.png)
