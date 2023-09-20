@@ -2,7 +2,7 @@
 
 ## Problema
 
-Soy el dueño de una envasadora de aceite y necesito saber a que precio debo de vender el aceite ya envasado para obtener beneficio, debido a que cada vez que se neceditan mas suministros por ejemplo de aceite, el coste de este puede haber variado, de forma que se necesite hacer un nuevo calculo de costes para obtener beneficio con su venta.
+Soy el dueño de una envasadora de aceite que desperdicia muhco tiempo recopilando las facturas de cada elemento necesario para envasar el aceite (como las botellas, tapones, cajetas, aceite, portes...) y calculando con dichos datos el precio al que debo de venderlo para obtener el beneficio que deseo.
 
 ## Claves de github
 
