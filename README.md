@@ -1,4 +1,4 @@
-# Calculo de precio de venta
+# Cálculo de precio de venta
 
 ## Problema
 
