@@ -2,9 +2,9 @@
 
 ## Problema
 
-Soy una persona que realiza compras que le gustaría saber al realizar una compra los productos comprados anteriormente, para evitar comprar cosas que ya obtuve con anterioridad y ver posibles errores que cometo al realizar las compras.
+Soy una persona que realiza compras que quiere evitar comprar productos innecesarios saber errores cometidos durante las compras, por ejemplo, productos que hayan sido comprados anteriormente o comprar tallas erroneas.
 
-Para ello, el comprador debe de subir su ticket de compra que será analizado y de ahí se extraerá la información necesaria para solucionar el problema.
+Para ello, el comprador debe de subir su ticket de compra que será analizado. De ahí se extraerá la información necesaria para que él sepa los productos que ha comprado con anterioridad e información sobre dichos productos.
 
 ## Claves de github
 
