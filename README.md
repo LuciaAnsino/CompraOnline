@@ -2,7 +2,7 @@
 
 ## Problema
 
-Soy una persona que expende mucho tiempo extrayendo la información del ticket de compra, para cuando haga futuras compras saber los productos que ya había comprado con antelación.
+Soy una persona que no tengo disponible todas las compras que realizo y siempre que voy a comprar acabo comprando productos que ya tenía.
 
 ## Claves de github
 
