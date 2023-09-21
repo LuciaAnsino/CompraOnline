@@ -2,7 +2,7 @@
 
 ## Problema
 
-Soy una persona que no tengo disponible todas las compras que realizo y siempre que voy a comprar acabo comprando productos que ya tenía.
+Soy una persona que al realizar una compra en un comercio de alimentos donde el ticket es electrónico, debo de pasar de forma manual cada producto comprado de forma individual y manual, desperdiciando en realizar el paso de información mucho tiempo.
 
 ## Claves de github
 
