@@ -12,6 +12,10 @@ Soy una persona que al realizar una compra en un comercio de alimentos donde el 
 
 ![Configuracion nombre y correo](./docs/configuracion.png)
 
+## User journey
+
+![User journey](./docs/viaje_usuario.md)
+
 ## Historias de usuario
 
 ![Historias de usuario](./docs/historias_usuario.md)
