@@ -7,7 +7,7 @@
 - **Viabilidad:** Es viable cuando lo apruebe el product manager.
 
 
-## [M1] Implementación de una heurística para obtener la información de un ticket electrónico
+## [M1] Implementación de la heurística para obtener la información de un ticket electrónico
 
 - **Objetivo:** Implementar una heurística que extrae la información requerida de los tickets electrónicos de compra.
 - **Entregable:** Código fuente de la heurística.
