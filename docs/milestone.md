@@ -1,6 +1,6 @@
 # Milestone
 
-## [M0] Diseño del problema
+## [M0] Modelo del problema
 
 - **Objetivo:** Analizar las HUs para identificar y extraer los elementos del dominio del problema y codificarlo.
 - **Entregable:** Código modularizado del modelo del problema.
