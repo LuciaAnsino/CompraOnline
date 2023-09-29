@@ -1,4 +1,4 @@
-# Información de compras
+# Información de productos comprados
 
 ## Problema
 
@@ -6,8 +6,20 @@ Soy una persona que al realizar una compra en un comercio de alimentos donde el 
 
 ## Claves de github
 
-![Clave Github](./documentos/clave_ssh.png)
+![Clave Github](./docs/clave_ssh.png)
 
 ## Configuración de nombre y correo electrónico
 
-![Configuracion nombre y correo](./documentos/configuracion.png)
+![Configuracion nombre y correo](./docs/configuracion.png)
+
+## User journey
+
+![User journey](./docs/viaje_usuario.md)
+
+## Historias de usuario
+
+![Historias de usuario](./docs/historias_usuario.md)
+
+## Milestone
+
+![Milestone](./docs/milestone.md)
