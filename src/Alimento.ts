@@ -4,7 +4,6 @@
 
 class Alimento {
     private readonly nombre: string;
-    private readonly cod_alimento: number;
 
     /**
      * Constructor de la clase Alimento
@@ -13,6 +12,5 @@ class Alimento {
      */
     constructor(nombre: string, cod_alimento: number) {
         this.nombre = nombre;
-        this.cod_alimento = cod_alimento;
     }
 }

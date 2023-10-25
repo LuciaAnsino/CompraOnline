@@ -3,8 +3,8 @@
  */
 
 class ListaElectronica {
-    private cod_alimento: number;
-    private nombre_alimento: string;
+    private readonly cod_alimento: number;
+    private readonly nombre_alimento: string;
     private cantidad: number;
     private fecha_compra: Date;
 
