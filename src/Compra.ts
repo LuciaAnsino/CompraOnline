@@ -1,15 +1,16 @@
 /**
- * Clase Compra. Esta clase es la que se encarga de gestionar las compras de los alimentos
+ * Clase Compra. Esta clase es la que se encarga de gestionar las compras de los alimentos.
+ * Es el ticket electrónico de la compra
  */
 
-class TicketElectronico {
+class Compra {
     private readonly cod_ticket: number;
     private fecha_compra: Date;
     private alimentos: Alimento[];
     private cantidad: number;
 
     /**
-     * Constructor de la clase TicketElectronico
+     * Constructor de la clase Compra
      * @param cod_ticket Código del ticket
      * @param fecha_compra Fecha de la compra
      * @param alimentos Alimentos comprados
