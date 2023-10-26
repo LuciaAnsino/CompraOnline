@@ -3,22 +3,13 @@
  */
 
 class ListaElectronica {
-    private readonly cod_alimento: number;
-    private readonly nombre_alimento: string;
-    private cantidad: number;
-    private fecha_compra: Date;
+    private alimentos: Map<Alimento, [number, Date]>;
 
     /**
      * Constructor de la clase ListaElectronica
-     * @param cod_alimento Código del alimento
-     * @param nombre_alimento Nombre del alimento
-     * @param cantidad Cantidad de cada alimento
-     * @param fecha_compra Fecha de compra del alimento
+     * @param alimentos Alimentos de la lista de la compra mapeados a sus cantidades y fechas de compra
      */
-    constructor (cod_alimento: number, nombre_alimento: string, cantidad: number, fecha_compra: Date) {
-        this.cod_alimento = cod_alimento;
-        this.nombre_alimento = nombre_alimento;
-        this.cantidad = cantidad;
-        this.fecha_compra = fecha_compra;
+    constructor(alimentos: Map<Alimento, [number, Date]>) {
+        this.alimentos = alimentos;
     }
 }
