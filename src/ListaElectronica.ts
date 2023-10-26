@@ -1,5 +1,5 @@
 /**
- * Clase ListaElectronica
+ * Clase ListaElectronica. Esta clase es la que se encarga de gestionar los alimentos de la lista de la compra
  */
 
 class ListaElectronica {

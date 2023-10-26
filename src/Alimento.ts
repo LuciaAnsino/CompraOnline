@@ -1,5 +1,5 @@
 /**
- * Clase Alimento
+ * Clase Alimento. Esta clase es la que se encarga de gestionar los alimentos
  */
 
 class Alimento {
@@ -8,9 +8,8 @@ class Alimento {
     /**
      * Constructor de la clase Alimento
      * @param nombre Nombre del alimento
-     * @param cod_alimento Código del alimento
      */
-    constructor(nombre: string, cod_alimento: number) {
+    constructor(nombre: string) {
         this.nombre = nombre;
     }
 }
