@@ -27,3 +27,10 @@ La entidad Compra es la entidad principal, ya que en ella es donde se realizará
 ## Milestone
 
 [Milestone](./docs/milestone.md)
+
+## Toolchain
+
+* Criterios que se seguirán para la elección: [criterios](./docs/criterios.md)
+* Elección del runtime: [runtime](./docs/runtime.md)
+* Elección del gestor de dependencias: [gestor de dependencias](./docs/eleccion_gestor_dependencias.md)
+* Elección del gestor de tareas: [gestor de tareas](./docs/eleccion_gestor_tareas.md)
