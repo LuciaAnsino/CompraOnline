@@ -1,1 +1,5 @@
 # Gestor de dependencias
+
+Debido a que el runtime del proyecto es deno, haré uso de su propia gestión de dependencias (a través de URL). Ya que si usara otro gestor de dependencias debería de importar este y añadiría dependencias y uno de los criterios era minimizar estas. 
+
+No obstante, hay que tener en cuanta la versiones que se usan al importar para evitar inconsistencias. Por ejemplo, si en un fichero se importa el módulo mongoose con la version 5.8 y a la semana se crea un fichero que tambien usa mongoose, pero resulta ser que hay una nueva versión, si tenemos muchos ficheros podemos no darnos cuenta y que en uno usemos una versión y en otro otra. Para solucionarlo, en un fichero importaré y exportaré todas las dependencias y de ahí es de donde importaré a los ficheros q usen cada módulo; asi evitamos inconsistencias.
