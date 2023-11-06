@@ -20,50 +20,47 @@ Permite definir reglas, tareas de compilación, pruebas u otras acciones mediant
 + Hay que configurar las reglas en el 'Makefille' para aprovechar las funcionalidades específicas de Deno.
 
 
-## Velociraptor
+## npm Scripts
 
-Permite definir tareas y scripts en un archivo de configuración, que puede ser 'velociraptor.yml' o 'velociraptor.json'.
-
-**Ventajas**
-+ Se centra en la ejecución de scripts y tareas.
-+ Compatible con Deno.
-+ Configuración sencilla.
-+ Facil de ejecutar desde la línea de comandos.
-
-**Desventajas**
-+ No está ligado directamente a Deno.
-+ Al ser una herramineta externa, agrega una capa adicional al proceso de desarrollo.
-+ Última versión publicada hace dos años.
-
-
-## Drake
-
-Funciona de forma similar a make, se definen las tareas y flujos de trabajo en un archivo de configuración, "Drakefile".
+Permite definir scripts definidos en 'package.json' para realizar tareas específicas.
 
 **Ventajas**
-+ Sintaxis clara y simple.
-+ Permite la creación de tareas específicas para deno.
-+ Proporciona flexibilidad en la automatización.
-+ Fácil de configurar y utilizar.
++ Los scripts se pueden ejecutar desde a línea de comandos, por lo que no se necesita instalar herraminetas adicionales.
++ Gran cantidad de documentación y recursos.
 
 **Desventajas**
-+ Al tener menor presencia tiene menor cantidad de ejemplos y recursos disponibles.
++ En grandes proyectos, resulta difícil manejar y mantener el archivo 'package.json'
++ No proporciona un método directo para reutilizar tareas, da lugar a código repetido
++ Sintaxis compleja para tareas complejas
+
+
+## Fly
+
+**Ventajas**
++ Sintaxis elegante y concisa, ermite escribir tareas de manera más legible y mantenible al ser siilar a las funciones generadoras de JavaScript.
++ Facilita la ejecución paralela de tareas.
++ Ofrece una amplia gama de plugins y herramientas para facilitar las diferentes tareas de construcción.
++ Permite definir tareas reutilizables.
+
+**Desventajas**
++ Enfoque basado en generadores requiere tiempo adicional para su compresión.
 + Menor comunidad y soporte.
 
 
-## Denosk
+## NPS
 
 Se utiliza para definir y ejecutar tareas comunes en proyectos Deno a través de scripts definidos en un archivo de configuración.
 
 **Ventajas**
-+ Esta diseñado especificamente para trabajar con deno.
-+ Sintaxis clara y simple.
-+ En continuo desarrollo, no está obsoleta
++ Soporte para argumentos y composición de scripts, lo que facilita la reutilización de tareas comunes.
++ Integración con npm y herramientas existentes.
++ Sintaxis clara y familiar.
++ Facilita la separación de las tareas en múltiples archivos para una mejor organización y mantenibilidad del código.
 
 **Desventajas**
-+ En funcionalidades avanzadas podría tener limitaciones.
++ El enfoque modular requiere tiempo adicional para su compresión.
 + Menor cantidad de documentación y recursos
 
 
 ## Elección final
-Para mi proyecto, usare el gestor de tareas de denosk, debido a que es fácil de implementar, no está obsoleto y puesto que es específico de Deno no tendría que configurarlo, reduciendo asi el tiempo que podría tardar en configurar o aprender el uso de otros gestores.
+Para mi proyecto, usare el gestor de tareas **NPS**, ya que es compatible con npm, que es el gestor de dependencias que usamos, es más fácil de aprender que fly y nos proporciona varias ventajas que nos facilitarán la realización del proyecto.
