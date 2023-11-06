@@ -60,7 +60,8 @@ Se utiliza para definir y ejecutar tareas comunes en proyectos Deno a través de
 **Desventajas**
 + El enfoque modular requiere tiempo adicional para su compresión.
 + Menor cantidad de documentación y recursos
++ Desactualizado
 
 
 ## Elección final
-Para mi proyecto, usare el gestor de tareas **NPS**, ya que es compatible con npm, que es el gestor de dependencias que usamos, es más fácil de aprender que fly y nos proporciona varias ventajas que nos facilitarán la realización del proyecto.
+Para mi proyecto, usare el gestor de tareas **node script**, ya que tiene una alta cantidad de documentación, tiene continuas actualizaciones y serña necesario menos cantidad de tiempo para saber usarlo, ya que también se usa como gestor de dependencias.
