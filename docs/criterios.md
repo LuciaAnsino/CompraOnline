@@ -10,3 +10,4 @@ Durante el desarrollo y mantenimiento del proyecto, vamos a necesitar usar difer
 * Se evitará tomar decisiones que aumenten la **deuda técnica**.
 * Los datos y el sistema deben de estar seguros, es decir, necesitamos una **protección adecuada**.
 * **Reducir el número de dependencias**, siempre que se pueda.
+* Las herramientas elegidas deben de **no** estar **obsoletas**.
