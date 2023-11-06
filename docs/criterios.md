@@ -1,6 +1,7 @@
 # Criterios de elección de herramientas
 
 Durante el desarrollo y mantenimiento del proyecto, vamos a necesitar usar diferentes herramientas. Para elegir las herramientas con las que trabajaremos tenemos que tener una serie de puntos a tener en cuenta:
+
 * Usamos el lenguaje de **TypeScript**.
 * Se considerarán los **estándares** del lenguaje en caso de tenerlos y si se siguen las mejores prácticas.
 * Evaluaremos el **rendimiento**; considerando la velocidad, la eficiencia de ejecución y las características del proyecto sobre el que trabajamos:
