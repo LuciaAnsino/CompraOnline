@@ -1,9 +1,9 @@
 {
     "name": "CompraOnline",
-    "version": "0.1.0",
+    "version": "0.0.1",
     "dependencies": {},
     "scripts": {
-        "check": "sc --noEmit src/compra.ts",
+        "check": "tsc --noEmit src/compra.ts",
         "build": "tsc"
     }
 }
