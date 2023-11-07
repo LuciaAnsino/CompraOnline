@@ -9,7 +9,10 @@ Soy una persona que al realizar una compra en un comercio de alimentos donde el 
 La entidad Compra es la entidad principal, ya que en ella es donde se realizará la lógica de negocio. En este caso, se encargará de obtener la información que se requiere de una compra obteniendola del ticket electrónico de la compra.
 
 Para ver que la sintaxis es la correcta del código del proyecto, habrá que ejecutar en la terminal el siguiente comando:
-+ #npm run-script check
+
+```bash
+npm run-script check
+```
 
 ## Claves de github
 
