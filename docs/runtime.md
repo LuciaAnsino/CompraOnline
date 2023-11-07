@@ -7,48 +7,24 @@ Hay diferentes runtime de JS:
 ## Node.js
 Podemos encontrar toda le información de este runtime en [Node.js](https://nodejs.org/en/)
 
-**Ventajas:**
-+ Optimo para manejar un número de solicitudes de forma asíncrona, es decir, maneja muchas conexiones simultáneas con baja latencia.
-+ Tiene soporte para Typescript.
-+ Amplio abanico de bibliotecas y módulos compatibles con Typescript.
-+ Uso del mismo lenguaje en front-esnd y back-end.
-+ Creado hace 14 años, teniendo una comunidad muy grande, lo que facilita la resolución de errores.
+Este runtime tiene soporte para Typescript y permite usar el mismo lenguaje en front-esnd y back-end. Debido a que fue creado hace 14 años y es muy popular tiene una comunidad muy grande, lo que facilita encontrar diversa información de este (como resolución de errores). Además, gracias a esto hay un amplio abanico de bibliotecas y módulos compatibles con Typescript.
 
-**Desventajas:**
-+ Para Typescript primero habría que transcribirlo a Javascript para que node lo ejecute.
-+ Algunas de las bibliotecas de Node pueden necesitar de ajustes de integración para usarse con Typescript.
-+ Puede necesitar muchos recursos.
-+ Se ejecuta unicamente en un subproceso lo que limita su rendimiento cuando hay un uso intensivo de la CPU.
+No obstante, para Typescript primero habría que transcribirlo a Javascript para que node lo ejecute y algunas de las bibliotecas de Node pueden necesitar de ajustes de integración para usarse con Typescript. También, puede necesitar muchos recursosy se ejecuta unicamente en un subproceso lo que limita su rendimiento cuando hay un uso intensivo de la CPU, que no sería nuestro caso.
 
 
 ## Bun
 Podemos encontrar toda le información de este runtime en [Bun](https://bun.sh/).
 
-**Ventajas** 
-+ Es el más reciente, fue creado como solución completa para la ejecución de Javascript.
-+ Muy buen rendimiento, prestaciones en velocidad mucho mayores que el resto de runtimes.
-+ Ejecuta Typescript de forma nativa.
-+ Buena compatibilidad con Node
+Este runtime es el más reciente de todos y fue creado como solución completa para la ejecución de Javascript. También, ejecuta Typescript de forma nativa, tiene buena compatibilidad con Node y muy buen rendimiento, prestaciones en velocidad mucho mayores que el resto de runtimes.
 
-**Desventajas**
-+ La versión más reciente (1.0), fue creada en septiembre, por lo que la comunidad es muy pequeña dificultando la resolución de fallos entre otros.
-+ Inestable debido a que esta muy fresco.
-+ Incertidumbre de si tendrá futuro o se quedará atascado.
+No obstante, la versión más reciente (1.0), fue creada en septiembre, por lo que la comunidad es muy pequeña dificultando la resolución de fallos entre otros. Otra desventaja de su juventud es que precisamente debido a ella es todavía inestable y está la incertidumbre de si tendrá futuro o se quedará atascado.
 
 ## Deno
 Podemos encontrar toda le información de este runtime en [Deno](https://deno.com/)
 
-**Ventajas**
-+ Soporta Typescript sin necesidad de transpilarlo.
-+ Arregla algunos errores de Node.
-+ Construido pensando en la seguridad. Ejecuta el código en un SandBox impidiendo el acceso del runtime a capas inferiores.
-+ No necesita gestor de dependencias, ya que importa módulo por URL.
-+ Es aproximadamente el doble de rápido que Node.
-+ Última versión en octubre de 2023, creado en 2018
+Este runtime soporta Typescript sin necesidad de transpilarlo, arregla algunos errores de Node y fue construido pensando en la seguridad. Además, no necesita gestor de dependencias, ya que importa módulo por URL y es aproximadamente el doble de rápido que Node.
 
-**Desventajas**
-+ Comunidad más pequeña que la de node, puesto a que es menos popular y más moderno.
-+ Rendimiento menor que su actual competidor.
+Sin embargo, la comunidad es más pequeña que la de node, puesto a que es menos popular y más moderno, aunque es un poco más antiguo que Bun y su rendimiento menor que su actual competidor.
 
 ## Decisión final
 Para mi proyecto creo que la elección más conveniente es **Node.js**. Ya que considero que al tener una gran comunidad me facilitará el desarrollo del proyecto. Además, como el proyecto no tiene una gran carga computacional no será un problema el uso de la CPU. Pese a que los otros tengan mejores prestaciones, como el proyecto es pequeño no habrá ningún problema.
