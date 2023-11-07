@@ -64,4 +64,4 @@ Se utiliza para definir y ejecutar tareas comunes en proyectos Deno a través de
 
 
 ## Elección final
-Para mi proyecto, usare el gestor de tareas **node script**, ya que tiene una alta cantidad de documentación, tiene continuas actualizaciones y serña necesario menos cantidad de tiempo para saber usarlo, ya que también se usa como gestor de dependencias.
+Para mi proyecto, usare el gestor de tareas **npm script**, ya que tiene una alta cantidad de documentación, tiene continuas actualizaciones y serña necesario menos cantidad de tiempo para saber usarlo, ya que también se usa como gestor de dependencias.
