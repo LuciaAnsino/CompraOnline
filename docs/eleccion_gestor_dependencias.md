@@ -3,42 +3,24 @@
 Es importante el uso de un gestor de dependencias, ya que facilita la gestión y el manejo de las bibliotecas, módulos, paquetes o dependencias externas que un proyecto de software utiliza. Su función principal es administrar la instalación, actualización, eliminación y resolución de dependencias, simplificando así el proceso de desarrollo de software.
 
 ## npm
-**Ventajas**
-+ Lo usa Node por defecto
-+ Permite buscar, instalar, actualizar y eliminar paquetes de software de Node.js
-+ Es ampliamente utlizado, por lo que hay abundantes recursos
-+ Ofrece una amplia coleeción de paquetes
-+ Sintaxis simple y fácil de aprender
-+ Es actualizado con regularidad
 
-**Desventajas**
-+ Ha enfrentado problemas de seguridad en el pasado
-+ Conflictos entre versiones
-+ Es más monolítico
+Es el gestor de dependencias que usa por defecto node, permite buscar, instalar, actualizar y eliminar paquetes de software de Node.js. Además, es ampliamente utlizado, por lo que hay abundantes recursos, debido a ello ofrece una amplia colección de paquetes. También tiene una sintaxis simple y fácil de aprender, lo que nos ahorrará tiempo y es actualizado con regularidad, lo que nos asegura que no está obsoleto.
+
+Sin embargo, ha enfrentado problemas de seguridad en el pasado, aunque ya está arreglado y puede haber conflictos entre versiones.
 
 
 ## Yarn
-**Ventajas**
-+ Rápida instalación de paquetes.
-+ Garantiza la reproducción exacta de dependencias, en el archivo 'yarn.lock' se proporciona una lista exacta de versiones de paquetes utilizadas.
-+ Garantiza la seguridad de las dependencias.
-+ Permite la instalación de paquetes offline.
-+ Compatible con npm
 
-**Desventajas**
-+ Más pesado en cunato a recursos y espacio en disco que necesita.
-+ Actualizaciones menos frecuentas
+Este gestor tiene una rápida instalación de paquetes y garantiza la reproducción exacta de dependencias, en el archivo 'yarn.lock' se proporciona una lista exacta de versiones de paquetes utilizadas, también arantiza la seguridad de las dependencias. Por otro lado, es compatible con npm y permite la instalación de paquetes offline.
+
+No obstante, es más pesado en cuanto a recursos y espacio en disco que necesita y sus actualizaciones son menos frecuentes, lo cual puede no ser beneficioso.
 
 
 ## pnpm
-**Ventajas**
-+ Ahorra espacio en disco al adoptar un enfoque de alamacenamientode único paquete por versión.
-+ Más rápido en la instalación que npm y yarn.
-+ Puede usar el archivo 'package.json'
 
-**Desventajas**
-+ Algunas herramientas que funcionan con npm o yarn pueden necesitar ajustes.
-+ Documentación y comunidad más limitados.
+Ahorra espacio en disco al adoptar un enfoque de alamacenamientode único paquete por versión, es más rápido en la instalación que npm y yarn y puede usar el archivo 'package.json'.
+
+Pero, algunas herramientas que funcionan con npm o yarn pueden necesitar ajustes y la documentación y comunidad son más limitadas.
 
 
 ## Decisión final
