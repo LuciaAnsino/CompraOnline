@@ -22,7 +22,7 @@ No obstante, en grandes proyectos, resulta difícil manejar y mantener el archiv
 
 ## Fly
 
-Es un gestor de tareas con una sintaxis elegante y concisa, permite escribir tareas de manera más legible y mantenible al ser siilar a las funciones generadoras de JavaScript. Además, facilita la ejecución paralela de tareas y ofrece una amplia gama de plugins y herramientas para facilitar las diferentes tareas de construcción. También, permite definir tareas reutilizables.
+Es un gestor de tareas con una sintaxis elegante y concisa, permite escribir tareas de manera más legible y mantenible al ser similar a las funciones generadoras de JavaScript. Además, facilita la ejecución paralela de tareas y ofrece una amplia gama de plugins y herramientas para facilitar las diferentes tareas de construcción. También, permite definir tareas reutilizables.
 
 Por otro lado, el enfoque basado en generadores requiere tiempo adicional, debido a que es más tedioso de comprender y al tiene menor comunidad es más complicado obtener información de él.
 
