@@ -4,7 +4,7 @@ Es importante el uso de un gestor de dependencias, ya que facilita la gestión y
 
 ## npm
 
-Es el gestor de dependencias que usa por defecto node, permite buscar, instalar, actualizar y eliminar paquetes de software de Node.js. Además, es ampliamente utlizado, por lo que hay abundantes recursos, debido a ello ofrece una amplia colección de paquetes. También tiene una sintaxis simple y fácil de aprender, lo que nos ahorrará tiempo y es actualizado con regularidad, lo que nos asegura que no está obsoleto.
+Es el gestor de dependencias que usa por defecto node. Además, es ampliamente utlizado, por lo que hay abundantes recursos, debido a ello ofrece una amplia colección de paquetes. También tiene una sintaxis simple y fácil de aprender, lo que nos ahorrará tiempo y es actualizado con regularidad, lo que nos asegura que no está obsoleto.
 
 Sin embargo, ha enfrentado problemas de seguridad en el pasado, aunque ya está arreglado y puede haber conflictos entre versiones.
 
