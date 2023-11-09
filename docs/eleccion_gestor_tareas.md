@@ -22,10 +22,10 @@ No obstante, en grandes proyectos, resulta difícil manejar y mantener el archiv
 
 ## Gulp
 
-Se basa en flujos, lo cual puede ser complejo pero como usa JavaScript facilita un poco entenderlo. Debido al uso de flujos tiende a ser más rápido que otros, ya que reduce la escritura y lectura en disco. Además, posee una gran comunidad y gran variedad de plugins.
+Se basa en flujos, lo cual hace que destaque su eficiencia y velocidad en ejecución de tareas, pero esta diseñado para manejar grandes proyectos, que no es el caso del nuestro. Debido a que tiene una sintaxis simple y se enfoca en código, puede aprenderse a usar facilmente. Además, es una herramineta activa, es decir, no está obsoleta.
 
-No obstante, como hemos dicho el uso de flujos es complejo, por lo que puede requerir de bastante tiempo aprenderlo en comparación con otros gestores comentados. Por otro lado, el uso excesivo de plugins puede introducir complejidad adicional en el proyecto y aumentar la dificultad en la depuración y mantenimiento.
+Por otro lado, tiene un gran comunidad que facilita la búsqueda de recursos informativos. También, se pueden elegir los plugins específicos que se necesiten, con lo que tendríamos solo las dependencias mínimas necesarias.
 
 
 ## Elección final
-Para mi proyecto, usare el gestor de tareas **npm script**, ya que tiene una alta cantidad de documentación, tiene continuas actualizaciones y sería necesario menos cantidad de tiempo para saber usarlo, ya que también se usa como gestor de dependencias. Además, los inconvenientes que tiene no son realmente un problema para el tipo de proyecto que estamos desarrollando.
+Para mi proyecto, usare el gestor de tareas **npm script**, ya que tiene una alta cantidad de documentación, tiene continuas actualizaciones y sería necesario menos cantidad de tiempo para saber usarlo, ya que también se usa como gestor de dependencias. Además, los inconvenientes que tiene no son realmente un problema para el tipo de proyecto que estamos desarrollando y se beneficia del uso de las dependencias ya instaladas con npm.
