@@ -11,16 +11,16 @@ Sin embargo, ha enfrentado problemas de seguridad en el pasado, aunque ya está 
 
 ## Yarn
 
-Este gestor tiene una rápida instalación de paquetes y garantiza la reproducción exacta de dependencias, en el archivo 'yarn.lock' se proporciona una lista exacta de versiones de paquetes utilizadas, también arantiza la seguridad de las dependencias. Por otro lado, es compatible con npm y permite la instalación de paquetes offline.
+Este gestor tiene una rápida instalación de paquetes y garantiza la reproducción exacta de dependencias, en el archivo 'yarn.lock' se proporciona una lista exacta de versiones de paquetes utilizadas, también garantiza la seguridad de las dependencias. Por otro lado, es compatible con npm y permite la instalación de paquetes offline.
 
 No obstante, es más pesado en cuanto a recursos y espacio en disco que necesita y sus actualizaciones son menos frecuentes, lo cual puede no ser beneficioso.
 
 
 ## pnpm
 
-Ahorra espacio en disco al adoptar un enfoque de alamacenamientode único paquete por versión, es más rápido en la instalación que npm y yarn y puede usar el archivo 'package.json'.
+Este gestor ahorra espacio en disco, ya que adopta un método de alamacenamiento que permite la reutilización de paquetes, por lo que solo mantiene en disco una única versión de un paquete en el sistema. Además, es más rápido en la instalación que npm y yarn, puesto que para la instalación de paquetes no descarga todas sus dependencias, solo las necesarias para ejercutar los binarios. y puede usar el archivo 'package.json'.
 
-Pero, algunas herramientas que funcionan con npm o yarn pueden necesitar ajustes y la documentación y comunidad son más limitadas.
+Pero, algunas herramientas que funcionan con npm o yarn pueden necesitar ajustes para ser compatibles y la documentación y comunidad son más limitadas.
 
 
 ## Decisión final
