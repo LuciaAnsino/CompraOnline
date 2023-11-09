@@ -6,7 +6,7 @@ Es importante el uso de un gestor de dependencias, ya que facilita la gestión y
 
 Es el gestor de dependencias que usa por defecto node. Además, es ampliamente utlizado, por lo que hay abundantes recursos, debido a ello ofrece una amplia colección de paquetes. También tiene una sintaxis simple y fácil de aprender, lo que nos ahorrará tiempo y es actualizado con regularidad, lo que nos asegura que no está obsoleto.
 
-Sin embargo, ha enfrentado problemas de seguridad en el pasado, aunque ya está arreglado y puede haber conflictos entre versiones.
+Sin embargo, puede haber conflictos entre versiones, es decir, que algunos paquetes requieran de diferentes versiones de una dependencia compartida o que se descarguen diferentes veriones del mismo módulo. Aunque, se podría solucionar especificando las versiones en el archivo 'package.json'.
 
 
 ## Yarn
