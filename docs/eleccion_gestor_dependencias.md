@@ -4,10 +4,9 @@ Es importante el uso de un gestor de dependencias, ya que facilita la gestión y
 
 ## npm
 
-Es el gestor de dependencias que usa por defecto node. Además, es ampliamente utlizado, por lo que hay abundantes recursos, debido a ello ofrece una amplia colección de paquetes. También tiene una sintaxis simple y fácil de aprender, lo que nos ahorrará tiempo y es actualizado con regularidad, lo que nos asegura que no está obsoleto.
+Al ser el gestor de paquetes predeterminado para Node.js, npm es fácil de aprender y utilizar, minimizando el tiempo dedicado a aprender e implementar este gestor. Además, reduce el número de dependencias innecesarias, ya que posee unos comandos que te permiten visualizar las dependencias, verificar si hay actualizaciones disponibles y permite realizar pruebas después de eliminar una dependencia para asegurarnos que no afecta al proyecto.
 
-Sin embargo, puede haber conflictos entre versiones, es decir, que algunos paquetes requieran de diferentes versiones de una dependencia compartida o que se descarguen diferentes veriones del mismo módulo. Aunque se podría solucionar especificando las versiones en el archivo 'package.json'.
-
+Al establecer dependencias de manera clara en el archivo package.json, permite mantener la solidez necesaria sin introducir un extra de complejidad. Por otro lado, tiene una amplia comunidad, lo cual nos proporciona una gran cantidad de información y documentación de este gestor y es actualizado frecuentemente.
 
 ## Yarn
 
