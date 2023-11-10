@@ -6,7 +6,7 @@ Es importante el uso de un gestor de dependencias, ya que facilita la gestión y
 
 Es el gestor de dependencias que usa por defecto node. Además, es ampliamente utlizado, por lo que hay abundantes recursos, debido a ello ofrece una amplia colección de paquetes. También tiene una sintaxis simple y fácil de aprender, lo que nos ahorrará tiempo y es actualizado con regularidad, lo que nos asegura que no está obsoleto.
 
-Sin embargo, puede haber conflictos entre versiones, es decir, que algunos paquetes requieran de diferentes versiones de una dependencia compartida o que se descarguen diferentes veriones del mismo módulo. Aunque, se podría solucionar especificando las versiones en el archivo 'package.json'.
+Sin embargo, puede haber conflictos entre versiones, es decir, que algunos paquetes requieran de diferentes versiones de una dependencia compartida o que se descarguen diferentes veriones del mismo módulo. Aunque se podría solucionar especificando las versiones en el archivo 'package.json'.
 
 
 ## Yarn
@@ -18,7 +18,7 @@ No obstante, es más pesado en cuanto a recursos y espacio en disco que necesita
 
 ## pnpm
 
-Este gestor ahorra espacio en disco, ya que adopta un método de alamacenamiento que permite la reutilización de paquetes, por lo que solo mantiene en disco una única versión de un paquete en el sistema. Además, es más rápido en la instalación que npm y yarn, puesto que para la instalación de paquetes no descarga todas sus dependencias, solo las necesarias para ejercutar los binarios. y puede usar el archivo 'package.json'.
+Este gestor ahorra espacio en disco, ya que adopta un método de alamacenamiento que permite la reutilización de paquetes, por lo que solo mantiene en disco una única versión de un paquete en el sistema. Además es más rápido en la instalación que npm y yarn, puesto que para la instalación de paquetes no descarga todas sus dependencias, solo las necesarias para ejercutar los binarios. Aparte puede usar el archivo 'package.json'.
 
 Pero, algunas herramientas que funcionan con npm o yarn pueden necesitar ajustes para ser compatibles y la documentación y comunidad son más limitadas.
 
