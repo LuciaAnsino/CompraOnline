@@ -24,4 +24,4 @@ Pero, algunas herramientas que funcionan con npm o yarn pueden necesitar ajustes
 
 
 ## Decisión final
-Para mi proyecto usaré el gestor de dependencias  **npm**, ya que el problema en la seguridad fue arreglado y hay una gran cantidad de información de este. Además, evito los problemas de espacio en disco que necesito con yarn, ya que de por si node necesita más recursos que otros runtimes. Por otro lado, los ajustes necesarios para algunas herramientas en pnpm requiere de un tiempo de aprendizaje y realización de ajustes que no compensa sus ventajas para las características de este proyecto.
+Para mi proyecto usaré el gestor de dependencias  **npm**,ya que hay una gran cantidad de información de este. Además, evito los problemas de espacio en disco que necesito con yarn, ya que de por si node necesita más recursos que otros runtimes. Por otro lado, los ajustes necesarios para algunas herramientas en pnpm requiere de un tiempo de aprendizaje y realización de ajustes que no compensan sus ventajas para las características de este proyecto.
