@@ -10,14 +10,12 @@ Al establecer dependencias de manera clara en el archivo package.json, permite m
 
 ## Yarn
 
-Este gestor tiene una rápida instalación de paquetes y garantiza la reproducción exacta de dependencias, en el archivo 'yarn.lock' se proporciona una lista exacta de versiones de paquetes utilizadas, también garantiza la seguridad de las dependencias. Por otro lado, es compatible con npm y permite la instalación de paquetes offline.
-
-No obstante, es más pesado en cuanto a recursos y espacio en disco que necesita y sus actualizaciones son menos frecuentes, lo cual puede no ser beneficioso.
+Este gestor destaca con respecto a npm por su velocidad de instalación. Además resuelve los problemas de redundancia de dependencias con su algoritmo de resolución de dependencias. Aunque el tiempo necesario para aprender su funcionamiento puede ser ligeramente mayor que npm. No obstante, su comunidad es menor que la de npm por lo que posee menos documentación e información, las actualizaciones se hacen con menos frecuencia que las de npm, es más pesado en cuanto a recursos y necesita más espacio en disco.
 
 
 ## pnpm
 
-Este gestor ahorra espacio en disco, ya que adopta un método de alamacenamiento que permite la reutilización de paquetes, por lo que solo mantiene en disco una única versión de un paquete en el sistema. Además es más rápido en la instalación que npm y yarn, puesto que para la instalación de paquetes no descarga todas sus dependencias, solo las necesarias para ejercutar los binarios. Aparte puede usar el archivo 'package.json'.
+Este gestor comparado con los otros, ahorra más espacio en disco, ya que adopta un método de alamacenamiento que permite la reutilización de paquetes, por lo que solo mantiene en disco una única versión de un paquete en el sistema. Además es más rápido en la instalación que npm y yarn, puesto que para la instalación de paquetes no descarga todas sus dependencias, solo las necesarias para ejercutar los binarios. Aparte puede usar el archivo 'package.json'.
 
 Pero, algunas herramientas que funcionan con npm o yarn pueden necesitar ajustes para ser compatibles y la documentación y comunidad son más limitadas.
 
