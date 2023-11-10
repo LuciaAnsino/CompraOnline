@@ -11,7 +11,7 @@ La entidad Compra es la entidad principal, ya que en ella es donde se realizará
 Para ver que la sintaxis es la correcta del código del proyecto, habrá que ejecutar en la terminal el siguiente comando:
 
 ```bash
-npm run check
+pnpm run check
 ```
 
 ## Claves de github

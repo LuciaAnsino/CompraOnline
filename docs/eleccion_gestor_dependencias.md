@@ -4,9 +4,7 @@ Es importante el uso de un gestor de dependencias, ya que facilita la gestión y
 
 ## npm
 
-Al ser el gestor de paquetes predeterminado para Node.js, npm es fácil de aprender y utilizar, minimizando el tiempo dedicado a aprender e implementar este gestor. Además, reduce el número de dependencias innecesarias, ya que posee unos comandos que te permiten visualizar las dependencias, verificar si hay actualizaciones disponibles y permite realizar pruebas después de eliminar una dependencia para asegurarnos que no afecta al proyecto.
-
-Al establecer dependencias de manera clara en el archivo package.json, permite mantener la solidez necesaria sin introducir un extra de complejidad. Por otro lado, tiene una amplia comunidad, lo cual nos proporciona una gran cantidad de información y documentación de este gestor y es actualizado frecuentemente.
+Al ser el gestor de paquetes predeterminado para Node.js al tener Node.js, ya está instalado. Sin embargo, puede generar una carpeta node_modules relativamente grande y no ofrece una solución directa para el problema de la redundancia de dependencias. Por otro lado, tiene una la comunidad, lo cual nos proporciona una gran cantidad de información y documentación de este gestor y es actualizado frecuentemente.
 
 ## Yarn
 
@@ -21,4 +19,4 @@ Pero, algunas herramientas que funcionan con npm o yarn pueden necesitar ajustes
 
 
 ## Decisión final
-Para mi proyecto usaré el gestor de dependencias  **npm**,ya que hay una gran cantidad de información de este. Además, evito los problemas de espacio en disco que necesito con yarn, ya que de por si node necesita más recursos que otros runtimes. Por otro lado, los ajustes necesarios para algunas herramientas en pnpm requiere de un tiempo de aprendizaje y realización de ajustes que no compensan sus ventajas para las características de este proyecto.
+Para mi proyecto usaré el gestor de dependencias  **pnpm**, ya que disminuye considerablemente el espacio necesario en disco y es más rápido que sus competidores. No obstante respecto a los otros gestores tiene menor documentación, pero sigue teniendo una amplia comunidad que va creciendo asi que no es dificil encontrar información sobre él.

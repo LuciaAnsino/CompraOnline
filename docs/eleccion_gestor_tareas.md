@@ -13,7 +13,7 @@ Permite definir reglas, tareas de compilación, pruebas u otras acciones mediant
 Sin embargo, la sintaxis y lógica son poco intuitivas. También, hay que configurar las reglas en el 'Makefile' para aprovechar las funcionalidades específicas de node, lo cual nos llevaría más tiempo.
 
 
-## npm Scripts
+## pnpm Scripts
 
 Permite definir scripts definidos en 'package.json' para realizar tareas específicas. Además, los scripts se pueden ejecutar desde a línea de comandos, por lo que no se necesita instalar herraminetas adicionales y tiene una gran cantidad de documentación y recursos.
 
@@ -28,4 +28,4 @@ Por otro lado, tiene un gran comunidad que facilita la búsqueda de recursos inf
 
 
 ## Elección final
-Para mi proyecto, usare el gestor de tareas **npm script**, ya que tiene una alta cantidad de documentación, tiene continuas actualizaciones y sería necesario menos cantidad de tiempo para saber usarlo, ya que también se usa como gestor de dependencias. Además, los inconvenientes que tiene no son realmente un problema para el tipo de proyecto que estamos desarrollando y se beneficia del uso de las dependencias ya instaladas con npm.
+Para mi proyecto, usare el gestor de tareas **pnpm script**, ya que tiene una alta cantidad de documentación, tiene continuas actualizaciones y es necesario menor cantidad de tiempo para saber usarlo, ya que también se usa como gestor de dependencias.Además los inconvenientes que tiene no son realmente un problema para el tipo de proyecto que estamos desarrollando y se beneficia del uso de las dependencias ya instaladas con npm.

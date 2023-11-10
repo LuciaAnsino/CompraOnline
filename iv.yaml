@@ -2,4 +2,4 @@ lenguaje: TypeScript
 entidad: src/compra.ts
 automatizar:
   fichero: package.json
-  orden: npm run
+  orden: pnpm run
