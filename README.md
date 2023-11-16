@@ -14,6 +14,15 @@ Para ver que la sintaxis es la correcta del código del proyecto, habrá que eje
 pnpm run check
 ```
 
+## Ejecución de los test
+
+Para ejecutar los test para la extracción de la información de los tickets electrónicos se puede hacer se la siguiente forma:
+
+```bash
+pnpm run test
+```
+
+
 ## Claves de github
 
 ![Clave Github](./docs/clave_ssh.png)
@@ -40,3 +49,4 @@ pnpm run check
 * Elección del runtime: [runtime](./docs/runtime.md)
 * Elección del gestor de dependencias: [gestor de dependencias](./docs/eleccion_gestor_dependencias.md)
 * Elección del gestor de tareas: [gestor de tareas](./docs/eleccion_gestor_tareas.md)
+* Elección del herramientas para test: [herramientas de test](./doc/eleccion_herramientas_test.md)
