@@ -1,2 +1,5 @@
 lenguaje: TypeScript
 entidad: src/ticket_electronico.ts
+automatizar:
+  fichero: package.json
+  orden: pnpm run

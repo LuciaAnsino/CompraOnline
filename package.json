@@ -1,0 +1,11 @@
+{
+    "name": "CompraOnline",
+    "version": "0.0.1",
+    "dependencies": {
+        "typescript": "5.2.2"
+    },
+    "scripts": {
+        "check": "tsc --noEmit src/compra.ts",
+        "build": "tsc"
+    }
+}
