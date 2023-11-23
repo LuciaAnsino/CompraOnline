@@ -17,16 +17,27 @@ export class Ticket implements DatosTicketElectronico{
     private compra: Alimento[];
     private fecha: Date;
 
-    constructor(ruta:string){
+    constructor(ruta:string, alimento: Alimento[], fecha_compra: Date){
         let info:string|null = this.leerTicket(ruta);
-
-        if (info){
-            this.fecha = this.fecha_compra(info)
-            this.compra = this.alimento(info)
+        if(ruta != " "){
+            if( alimento && fecha_compra){
+                if (info){
+                    this.fecha = this.fecha_compra(info)
+                    this.compra = this.alimento(info)
+                }else{
+                    this.fecha = new Date();
+                    this.compra = [];
+                }
+            }else{
+                this.compra = alimento
+                this.fecha = fecha_compra
+            }
         }else{
-            this.fecha = new Date();
-            this.compra = [];
+            this.compra = alimento
+            this.fecha = fecha_compra
         }
+        console.log(this.compra);
+        console.log(this.fecha);
     }
 
     private fecha_compra(ticket:string):Date{
@@ -34,7 +45,7 @@ export class Ticket implements DatosTicketElectronico{
 
         if (expresionFechaCompra){
             const [_, dia, mes, anio] = expresionFechaCompra;
-            return new Date(parseInt(anio), parseInt(mes) - 1, parseInt(dia));
+            return new Date(parseInt(anio), parseInt(mes)-1, parseInt(dia)+1);
         }
         else{
             return new Date();
