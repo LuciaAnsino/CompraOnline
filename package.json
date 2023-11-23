@@ -4,8 +4,13 @@
     "dependencies": {
         "typescript": "5.2.2"
     },
+    "devDependencies": {
+        "vitest":"^0.34.6"
+    },
     "scripts": {
-        "check": "tsc --noEmit src/compra.ts",
-        "build": "tsc"
+        "check": "tsc --noEmit src/ticket_electronico.ts",
+        "build": "tsc",
+        "test":"vitest",
+        "start": "node dist/ticket_electronico.ts"
     }
 }
