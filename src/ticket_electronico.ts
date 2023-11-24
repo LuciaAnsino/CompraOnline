@@ -25,8 +25,6 @@ export class Ticket{
             this.compra = [];
             this.fecha = new Date();
         }
-        console.log(this.compra);
-        console.log(this.fecha);
     }
 
     private fecha_compra(ticket:string):Date{
@@ -42,26 +40,40 @@ export class Ticket{
     }
 
     private alimento(ticket:string):Alimento[]{
-        const expresionCantidad: RegExpMatchArray|null = ticket.match(/(?<=FACTURA SIMPLIFICADA:[^\n]*\n\n)([\s\S]*?)(?=\n\nDescripción)/g);
+        const expresionCantidad: RegExpMatchArray|null = ticket.match(/\n(\d+)\s|\t/g);
+        const expresionAlimentos: RegExpMatchArray|null = ticket.match(/\n(\d+)(\s+|\t+)(([A-Za-z]+)[.-]?(\s)?)*[A-Za-z]+/g);
 
-        const expresionAlimentos: RegExpMatchArray|null = ticket.match(/Descripción\s*\n([\s\S]*?)/g);
-        console.log('asignacion alimentos');
-        console.log(expresionAlimentos);
         if (expresionCantidad && expresionAlimentos){
-            console.log("Encuentra valores");
-            const cantidad: number[] = expresionCantidad[0].split("\n").map(cantidad => parseInt(cantidad));
-            const productos: string[] = expresionAlimentos[0].split("\n");
-
-            const arrayAlimentos: Alimento[] = [];
-            for (let i = 0; i < Math.min(cantidad.length, productos.length); i++) {
-                const alimento = new Alimento(productos[i], cantidad[i]);
-                arrayAlimentos.push(alimento);
-            }
+            const cantidad: number[] = this.obtenerCantidad(expresionCantidad);
+            const arrayAlimentos: Alimento[] = this.obtenerAlimento(expresionAlimentos,cantidad);
             return arrayAlimentos;
         }
         else{
            return [];
         }
+    }
+
+    private obtenerAlimento(array: string[], cantidad:number[]):Alimento[]{
+        let alimentos: Alimento[] = [];
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i].match(/(([A-Za-z]+)[.-]?(\s)?)*[A-Za-z]+/);
+            if (element){
+                const alimento = new Alimento(element[0], cantidad[i]);
+                alimentos.push(alimento);
+            }
+        }
+        return alimentos;
+    }
+
+    private obtenerCantidad(array: string[]):number[]{
+        let cantidad:number[] = [];
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i].match(/\d+/);
+            if (element){
+                cantidad.push(parseInt(element[0]));
+            }
+        }
+        return cantidad;
     }
 
     private leerTicket(ruta:string): string{
