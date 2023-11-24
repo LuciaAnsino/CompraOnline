@@ -5,36 +5,25 @@ import * as fs from "fs";
  * Contiene los atributos de un ticket electronico.
  */
 
-/**
- * Struct de datos relevantes de un ticket electronico.
- */
-interface DatosTicketElectronico {
-    (alimento: string): Alimento[];
-    (fecha_compra: string): Date;
-}
-
-export class Ticket implements DatosTicketElectronico{
+export class Ticket{
     private compra: Alimento[];
     private fecha: Date;
 
-    constructor(ruta:string, alimento: Alimento[], fecha_compra: Date){
-        let info:string|null = this.leerTicket(ruta);
+    constructor(ruta?:string , alimento?: Alimento[], fecha_compra?: Date){
+        let contiene_info = false;
+
         if(ruta != " "){
-            if( alimento && fecha_compra){
-                if (info){
-                    this.fecha = this.fecha_compra(info)
-                    this.compra = this.alimento(info)
-                }else{
-                    this.fecha = new Date();
-                    this.compra = [];
-                }
-            }else{
-                this.compra = alimento
-                this.fecha = fecha_compra
+            let info:string|null = this.leerTicket(ruta||" ");
+            if (info && !(alimento && fecha_compra)){
+                this.fecha = this.fecha_compra(info);
+                this.compra = this.alimento(info);
+                contiene_info = true;
             }
-        }else{
-            this.compra = alimento
-            this.fecha = fecha_compra
+        }
+
+        if (contiene_info == false){
+            this.compra = alimento || [];
+            this.fecha = fecha_compra || new Date();
         }
         console.log(this.compra);
         console.log(this.fecha);
@@ -55,9 +44,11 @@ export class Ticket implements DatosTicketElectronico{
     private alimento(ticket:string):Alimento[]{
         const expresionCantidad: RegExpMatchArray|null = ticket.match(/(?<=FACTURA SIMPLIFICADA:[^\n]*\n\n)([\s\S]*?)(?=\n\nDescripción)/g);
 
-        const expresionAlimentos: RegExpMatchArray|null = ticket.match(/(?<=Descripción\s*\n)[\s\S]*?(?=\r?\n\s*\r?\n|\r?\n\s*$)/);
-  
+        const expresionAlimentos: RegExpMatchArray|null = ticket.match(/Descripción\s*\n([\s\S]*?)/g);
+        console.log('asignacion alimentos');
+        console.log(expresionAlimentos);
         if (expresionCantidad && expresionAlimentos){
+            console.log("Encuentra valores");
             const cantidad: number[] = expresionCantidad[0].split("\n").map(cantidad => parseInt(cantidad));
             const productos: string[] = expresionAlimentos[0].split("\n");
 
