@@ -9,12 +9,12 @@ export class Ticket{
     private compra: Alimento[];
     private fecha: Date;
 
-    constructor(ruta?:string , alimento?: Alimento[], fecha_compra?: Date){
+    constructor(ruta:string){
         let contiene_info = false;
 
         if(ruta != " "){
             let info:string|null = this.leerTicket(ruta||" ");
-            if (info && !(alimento && fecha_compra)){
+            if (info){
                 this.fecha = this.fecha_compra(info);
                 this.compra = this.alimento(info);
                 contiene_info = true;
@@ -22,8 +22,8 @@ export class Ticket{
         }
 
         if (contiene_info == false){
-            this.compra = alimento || [];
-            this.fecha = fecha_compra || new Date();
+            this.compra = [];
+            this.fecha = new Date();
         }
         console.log(this.compra);
         console.log(this.fecha);
