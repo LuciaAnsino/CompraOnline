@@ -6,7 +6,7 @@ Para la realización del proyecto es necesario testear el código, para ello es 
 
 Para la elección de las herramientas tendremos en cuenta los criterios siguientes:
 + Debe de ser **compatible** con Typescript.
-+ Cuanta mayor **versatibilidad** mejor.
++ Se considerará mejor las herramientas que engloben varias funciones.
 + Tendrá preferencia que la herramienta **cubra** más de un funcionamiento (aserción, CLI, test runner).
 + Preferencia a gran cantidad de documentación.
 + Tendremos en cuenta la **valoración** en [Snyk Advisor](https://snyk.io/advisor)
