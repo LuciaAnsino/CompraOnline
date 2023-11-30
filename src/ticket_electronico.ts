@@ -11,7 +11,7 @@ export class Ticket{
 
     constructor(ruta:string){
         if(ruta == " "){
-            //throw new Error("Ticket incorrecto, ruta no valida");
+            throw new Error("Ticket incorrecto, ruta no valida");
         }
 
         try {

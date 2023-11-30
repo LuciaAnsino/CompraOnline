@@ -26,13 +26,10 @@ describe("Extracción de información de la relevante de un ticket", () =>{
 
     it("Extracción completa de datos", () => {
 
-        const ticket_electronico = new Ticket(" ");
-
-        let prod:Alimento[] = [];        
-        const fecha = new Date();
-        
-        console.log(ticket_electronico)
-        expect(prod).toEqual(ticket_electronico.compra);
-        expect(fecha).toEqual(ticket_electronico.fecha);
+        try{
+            const ticket_electronico = new Ticket(" ");
+        }catch(error){
+            expect(error.message).toEqual("Ticket incorrecto, ruta no valida");
+        }
     });
 });
