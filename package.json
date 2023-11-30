@@ -10,6 +10,6 @@
         "check": "tsc --noEmit src/ticket_electronico.ts",
         "build": "tsc",
         "test": "vitest",
-        "start": "node dist/ticket_electronico.ts"
+        "start": "node dist/ticket_electronico.test.ts"
     }
 }

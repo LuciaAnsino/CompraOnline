@@ -10,19 +10,18 @@ export class Ticket{
     private _fecha: Date;
 
     constructor(ruta:string){
-        let contiene_info = false;
-
-        this._compra = [];
-        this._fecha = new Date();
-
-        if(ruta != " "){
-            let info:string|null = this.leerTicket(ruta||" ");
-            if (info){
-                this._fecha = this.fecha_compra(info);
-                this._compra = this.alimento(info);
-                contiene_info = true;
-            }
+        if(ruta == " "){
+            //throw new Error("Ticket incorrecto, ruta no valida");
         }
+
+        try {
+            let info:string = this.leerTicket(ruta);
+            this._fecha = this.fecha_compra(info);
+            this._compra = this.alimento(info);
+        } catch (error) {
+            throw new Error('No se ha podido leer el ticket');
+        }
+
     }
 
     private fecha_compra(ticket:string):Date{
