@@ -4,11 +4,19 @@
  */
 
 export class Alimento {
-    private nombre: string;
-    private cantidad: number;
+    private _nombre: string;
+    private _cantidad: number;
 
     constructor( nombre: string, cantidad: number) {
-        this.nombre = nombre;
-        this.cantidad = cantidad;
+        this._nombre = nombre;
+        this._cantidad = cantidad;
+    }
+
+    get nombre(): string {
+        return this._nombre;
+    }
+
+    get cantidad(): number {
+        return this._cantidad;
     }
 }

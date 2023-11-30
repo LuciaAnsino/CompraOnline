@@ -9,7 +9,6 @@
 
 
     Descripción                       P. Unit      Importe
-1   +PROT NATILLA VAINI                               1,70
 1   PANEC. 100% INTEGRAL                              1,05
 1   BANANA
         1,080 kg                  1,45 €/kg           1,57

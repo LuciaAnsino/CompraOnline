@@ -18,6 +18,7 @@ export class Ticket{
             const info = fs.readFileSync(ruta, 'utf8');
             this._fecha = this.fecha_compra(info);
             this._compra = this.alimento(info);
+            console.log(this._fecha);
         } catch (error) {
             throw new Error('No se ha podido leer el ticket');
         }
@@ -53,7 +54,7 @@ export class Ticket{
     private obtenerAlimento(array: string[], cantidad:number[]):Alimento[]{
         const alimentos: Alimento[] = array
             .map((element, index) => {
-                const match = element.match(/(([A-Za-z]+)[.-]?(\s)?)*[A-Za-z]+/);
+                const match = element.match(/(([A-Za-z]+)[./-]?(\s)?)*[A-Za-z]+/);
                 if (match) {
                     return new Alimento(match[0], cantidad[index]);
                 }
