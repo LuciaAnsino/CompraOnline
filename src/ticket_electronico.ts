@@ -18,7 +18,6 @@ export class Ticket{
             const info = fs.readFileSync(ruta, 'utf8');
             this._fecha = this.fecha_compra(info);
             this._compra = this.alimento(info);
-            console.log(this._fecha);
         } catch (error) {
             throw new Error('No se ha podido leer el ticket');
         }
