@@ -51,14 +51,16 @@ export class Ticket{
     }
 
     private obtenerAlimento(array: string[], cantidad:number[]):Alimento[]{
-        let alimentos: Alimento[] = [];
-        for (let i = 0; i < array.length; i++) {
-            const element = array[i].match(/(([A-Za-z]+)[.-]?(\s)?)*[A-Za-z]+/);
-            if (element){
-                const alimento = new Alimento(element[0], cantidad[i]);
-                alimentos.push(alimento);
-            }
-        }
+        const alimentos: Alimento[] = array
+            .map((element, index) => {
+                const match = element.match(/(([A-Za-z]+)[.-]?(\s)?)*[A-Za-z]+/);
+                if (match) {
+                    return new Alimento(match[0], cantidad[index]);
+                }
+                return null;
+            })
+            .filter((alimento) => alimento !== null) as Alimento[];
+
         return alimentos;
     }
 
