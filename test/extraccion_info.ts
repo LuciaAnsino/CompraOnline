@@ -20,8 +20,8 @@ describe("Extracción de información de la relevante de un ticket", () =>{
         const fecha = new Date('2023-10-07T22:00:00.000Z');
         
         console.log(ticket_electronico)
-        expect(prod).toEqual(ticket_electronico.getCompra());
-        expect(fecha).toEqual(ticket_electronico.getFecha());
+        expect(prod).toEqual(ticket_electronico.compra);
+        expect(fecha).toEqual(ticket_electronico.fecha);
     });
 
     it("Extracción completa de datos", () => {
@@ -32,7 +32,7 @@ describe("Extracción de información de la relevante de un ticket", () =>{
         const fecha = new Date();
         
         console.log(ticket_electronico)
-        expect(prod).toEqual(ticket_electronico.getCompra());
-        expect(fecha).toEqual(ticket_electronico.getFecha());
+        expect(prod).toEqual(ticket_electronico.compra);
+        expect(fecha).toEqual(ticket_electronico.fecha);
     });
 });

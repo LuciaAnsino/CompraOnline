@@ -6,20 +6,20 @@ import * as fs from "fs";
  */
 
 export class Ticket{
-    private compra: Alimento[];
-    private fecha: Date;
+    private _compra: Alimento[];
+    private _fecha: Date;
 
     constructor(ruta:string){
         let contiene_info = false;
 
-        this.compra = [];
-        this.fecha = new Date();
+        this._compra = [];
+        this._fecha = new Date();
 
         if(ruta != " "){
             let info:string|null = this.leerTicket(ruta||" ");
             if (info){
-                this.fecha = this.fecha_compra(info);
-                this.compra = this.alimento(info);
+                this._fecha = this.fecha_compra(info);
+                this._compra = this.alimento(info);
                 contiene_info = true;
             }
         }
@@ -84,11 +84,11 @@ export class Ticket{
         return info;
     }
 
-    public getCompra():Alimento[]{
-        return this.compra;
+    get compra():Alimento[]{
+        return this._compra;
     }
 
-    public getFecha():Date{
-        return this.fecha;
+    get fecha():Date{
+        return this._fecha;
     }
 }
