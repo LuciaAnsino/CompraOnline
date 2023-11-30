@@ -15,7 +15,7 @@ export class Ticket{
         }
 
         try {
-            let info:string = this.leerTicket(ruta);
+            const info = fs.readFileSync(ruta, 'utf8');
             this._fecha = this.fecha_compra(info);
             this._compra = this.alimento(info);
         } catch (error) {
@@ -71,16 +71,6 @@ export class Ticket{
             }
         }
         return cantidad;
-    }
-
-    private leerTicket(ruta:string): string{
-        let info:string = '';
-        try {
-            info = fs.readFileSync(ruta, 'utf8');
-        } catch (error) {
-            console.error(`Error al leer el archivo: ${error}`);
-        }
-        return info;
     }
 
     get compra():Alimento[]{
