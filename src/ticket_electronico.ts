@@ -85,4 +85,12 @@ export class Ticket{
         }
         return info;
     }
+
+    public getCompra():Alimento[]{
+        return this.compra;
+    }
+
+    public getFecha():Date{
+        return this.fecha;
+    }
 }
