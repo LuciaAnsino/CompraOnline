@@ -18,10 +18,21 @@ describe("Extracción de información de la relevante de un ticket", () =>{
         prod.push(alimento4);
         
         const fecha = new Date('2023-10-07T22:00:00.000Z');
-        const ticket_esperado = new Ticket(" ", prod,fecha);
-        //console.log(prod);
-        //console.log(ticket_esperado);
+        
         console.log(ticket_electronico)
-        expect(ticket_electronico).toEqual(ticket_electronico);
+        expect(prod).toEqual(ticket_electronico.getCompra());
+        expect(fecha).toEqual(ticket_electronico.getFecha());
+    });
+
+    it("Extracción completa de datos", () => {
+
+        const ticket_electronico = new Ticket(" ");
+
+        let prod:Alimento[] = [];        
+        const fecha = new Date();
+        
+        console.log(ticket_electronico)
+        expect(prod).toEqual(ticket_electronico.getCompra());
+        expect(fecha).toEqual(ticket_electronico.getFecha());
     });
 });
