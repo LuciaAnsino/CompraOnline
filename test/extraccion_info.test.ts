@@ -64,6 +64,7 @@ describe("Extracción de información de la relevante de un ticket", () =>{
         const compra = ticket_electronico.compra;
 
         let prod: Alimento[] = [];
+        prod.push(new Alimento("6 HUEVOS", 1));
         prod.push(new Alimento("PANEC", 1));
         prod.push(new Alimento("MELOCOTON AMARILLO", 1));
         prod.push(new Alimento("BANANA", 1));

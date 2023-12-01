@@ -29,30 +29,32 @@ export class Ticket{
             return new Date(parseInt(anio), parseInt(mes)-1, parseInt(dia)+1);
         }
         else{
-            return new Date();
-      }
+            throw new Error("No se encontró la fecha");
+        }
     }
 
     private alimento(ticket:string):Alimento[]{
         const expresionCantidad: RegExpMatchArray|null = ticket.match(/\n(\d+)\s|\t/g);
-        const expresionAlimentos: RegExpMatchArray|null = ticket.match(/\n(\d+)(\s+|\t+)(([A-Za-z]+)[.-]?(\s)?)*[A-Za-z]+/g);
+        const expresionAlimentos: RegExpMatchArray|null = ticket.match(/\n((\d+)(\s+|\t+))+(([A-Za-z]+)[.-]?(\s)?)*[A-Za-z]+/g);
 
         if (expresionCantidad && expresionAlimentos){
             const cantidad: number[] = this.obtenerCantidad(expresionCantidad);
             const arrayAlimentos: Alimento[] = this.obtenerAlimento(expresionAlimentos,cantidad);
+            console.log(arrayAlimentos);
             return arrayAlimentos;
         }
         else{
-           return [];
+            throw new Error("No se encontraron alimentos");
         }
     }
 
     private obtenerAlimento(array: string[], cantidad:number[]):Alimento[]{
         const alimentos: Alimento[] = array
             .map((element, index) => {
-                const match = element.match(/(([A-Za-z]+)[./-]?(\s)?)*[A-Za-z]+/);
+                const match = element.replace(/\n(\d+)(\s+|\t+)/, '');
+                console.log(match);
                 if (match) {
-                    return new Alimento(match[0], cantidad[index]);
+                    return new Alimento(match, cantidad[index]);
                 }
                 return null;
             })
