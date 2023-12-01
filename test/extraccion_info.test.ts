@@ -30,7 +30,7 @@ describe("Extracción de información de la relevante de un ticket", () =>{
     it("Extracción completa de datos, ticket incorrecto", () => {
 
         try{
-            const ticket_electronico = new Ticket(" ");
+            const ticket_electronico = new Ticket("data/Mercadona.txt");
         }catch(error){
             expect(error.message).toEqual("Ticket incorrecto, ruta no valida");
         }

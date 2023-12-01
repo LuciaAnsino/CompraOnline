@@ -10,16 +10,13 @@ export class Ticket{
     private _fecha: Date;
 
     constructor(ruta:string){
-        if(ruta == " "){
-            throw new Error("Ticket incorrecto, ruta no valida");
-        }
 
         try {
             const info = fs.readFileSync(ruta, 'utf8');
             this._fecha = this.fecha_compra(info);
             this._compra = this.alimento(info);
         } catch (error) {
-            throw new Error('No se ha podido leer el ticket');
+            throw new Error("Ticket incorrecto, ruta no valida");
         }
 
     }
