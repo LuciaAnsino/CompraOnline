@@ -1,11 +1,15 @@
 {
     "name": "CompraOnline",
     "version": "0.0.1",
-    "dependencies": {
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "vitest": "^0.34.6",
         "typescript": "5.2.2"
     },
     "scripts": {
-        "check": "tsc --noEmit src/compra.ts",
-        "build": "tsc"
+        "check": "tsc --noEmit src/ticket_electronico.ts",
+        "build": "tsc",
+        "test": "vitest",
+        "start": "node dist/ticket_electronico.test.ts"
     }
 }
