@@ -49,4 +49,5 @@ pnpm run test
 * Elección del runtime: [runtime](./docs/runtime.md)
 * Elección del gestor de dependencias: [gestor de dependencias](./docs/eleccion_gestor_dependencias.md)
 * Elección del gestor de tareas: [gestor de tareas](./docs/eleccion_gestor_tareas.md)
-* Elección del herramientas para test: [herramientas de test](./doc/eleccion_herramientas_test.md)
+* Elección del herramientas para test: [herramientas de test](./docs/eleccion_herramientas_test.md)
+* Elección de la imagen base para el contenedor: [imagen base](./docs/eleccion_imagen.md)
