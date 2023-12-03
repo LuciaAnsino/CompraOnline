@@ -3,13 +3,17 @@
     "version": "0.0.1",
     "devDependencies": {
         "@types/node": "^20.10.0",
-        "vitest": "^0.34.6",
-        "typescript": "5.2.2"
+        "@types/chai": "^4.3.10",
+        "@types/mocha": "^10.0.4",
+        "chai": "^4.3.10",
+        "mocha": "^10.2.0",
+        "typescript": "5.2.2",
+        "ts-node": "^10.9.1"
     },
     "scripts": {
         "check": "tsc --noEmit src/ticket_electronico.ts",
         "build": "tsc",
-        "test": "vitest",
+        "test": "mocha -r ts-node/register 'test/*.ts'",
         "start": "node dist/ticket_electronico.test.ts"
     }
 }

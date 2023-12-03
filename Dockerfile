@@ -16,7 +16,7 @@ COPY package.json package-lock.json ./
 
 RUN npm install -g pnpm@latest
 
-RUN pnpm ci
+RUN pnpm install
 
 WORKDIR /app/test
 
