@@ -25,7 +25,7 @@ describe("Extracción de información de la relevante de un ticket", () => {
 
         expect(foundFoods).to.deep.equal(Array(prod.length).fill(true));
 
-        const fecha = new Date("2023-10-07T22:00:00.000Z");
+        const fecha = new Date("2023-10-07T00:00:00.000Z");
         expect(fecha).to.deep.equal(ticket_electronico.fecha);
     });
 
@@ -56,7 +56,7 @@ describe("Extracción de información de la relevante de un ticket", () => {
         );
         expect(foundFoods).to.deep.equal(Array(prod.length).fill(true));
 
-        const fecha = new Date("2023-09-18T22:00:00.000Z");
+        const fecha = new Date("2023-09-18T00:00:00.000Z");
         expect(fecha).to.deep.equal(ticket_electronico.fecha);
     });
 
@@ -78,7 +78,7 @@ describe("Extracción de información de la relevante de un ticket", () => {
             )
         );
         expect(foundFoods).to.deep.equal(Array(prod.length).fill(true));
-        const fecha = new Date("2023-09-15T22:00:00.000Z");
+        const fecha = new Date("2023-09-15T00:00:00.000Z");
         expect(fecha).to.deep.equal(ticket_electronico.fecha);
     });
 });

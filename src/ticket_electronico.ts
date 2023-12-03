@@ -26,7 +26,7 @@ export class Ticket{
 
         if (expresionFechaCompra){
             const [_, dia, mes, anio] = expresionFechaCompra;
-            return new Date(parseInt(anio), parseInt(mes)-1, parseInt(dia)+1);
+            return new Date(parseInt(anio), parseInt(mes)-1, parseInt(dia));
         }
         else{
             throw new Error("No se encontró la fecha");

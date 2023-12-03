@@ -22,6 +22,19 @@ Para ejecutar los test para la extracción de la información de los tickets ele
 pnpm run test
 ```
 
+## Contenedor
+
+Para construir la imagen del contenedor debemos de lanzar:
+
+```bash
+sudo docker build -t luciaansino/compraonline .
+```
+
+Y ejecutamos el contenedor:
+```bash
+docker run -tv `pwd`:/app/test luciaansino/compraonline
+```
+
 
 ## Claves de github
 
