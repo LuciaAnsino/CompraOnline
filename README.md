@@ -27,7 +27,7 @@ pnpm run test
 Para construir la imagen del contenedor debemos de lanzar:
 
 ```bash
-sudo docker build -t luciaansino/compraonline .
+docker build -t luciaansino/compraonline .
 ```
 
 Y ejecutamos el contenedor:
