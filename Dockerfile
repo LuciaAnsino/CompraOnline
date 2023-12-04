@@ -24,7 +24,7 @@ COPY package.json package-lock.json ./
 
 #RUN rm -f package.json package-lock.json
 
-RUN pnpm install
+RUN pnpm install ci
 
 WORKDIR /app/test
 
