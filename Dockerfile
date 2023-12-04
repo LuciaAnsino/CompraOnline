@@ -1,12 +1,9 @@
 FROM node:bookworm-slim
 
-LABEL maintainer="luciaansino@correo.ugr.es"
+LABEL maintainer="luciaansino@correo.ugr.es"\
+      version="5.0.3"
 
 ENV NODE_VERSION 21.3.0
-
-#RUN mkdir /usr/local/lib/node_modules/pnpm && chmod 777 /usr/local/lib/node_modules/pnpm
-
-#RUN chown -R node:node /usr/local/lib/node_modules/
 
 RUN mkdir /.pnpm && chmod 777 /.pnpm
 
