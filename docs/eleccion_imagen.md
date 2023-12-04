@@ -26,4 +26,4 @@ Para elegir la imagen base que usaré para el proyecto, valoraré cuál es la me
 + [Fedora](https://hub.docker.com/_/fedora), es una imagen que no contiene por defecto Node.js no obstante se podría instalar. Su tamaño es de 64.9 MB y la última vez que fue actualizada fue hace 5 días.
 
 ## Decisión final
-Considero que lo mejor es usar la imagen base de Node.js, ya que viene preparada para usar node. No obstante, para reducir el tamaño considero que lo mejor sería usarla con alguna de sus etiquetas y en este caso creo que la que mejor se ajusta a todos los criterios es la etiqueta bookworm-slim (que se debe de preceder de la versión de node que usaremos, que en este caso será la 20.8.0)
+Considero que lo mejor es usar la imagen base de Node.js, ya que viene preparada para usar node. No obstante, para reducir el tamaño considero que lo mejor sería usarla con alguna de sus etiquetas y en este caso creo que la que mejor se ajusta a todos los criterios es la etiqueta bookworm-slim (que se debe de preceder de la versión de node que usaremos, que en este caso será la 21.3.0)
