@@ -34,6 +34,7 @@ Y ejecutamos el contenedor:
 ```bash
 docker run -tv `pwd`:/app/test luciaansino/compraonline
 ```
+La imagen se encuentra en [Docker hub](https://hub.docker.com/repository/docker/luciaansino/compraonline/general)
 
 
 ## Claves de github

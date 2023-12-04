@@ -2,11 +2,11 @@ FROM node:bookworm-slim
 
 LABEL maintainer="luciaansino@correo.ugr.es"
 
-ENV NODE_VERSION 20.8.0
+ENV NODE_VERSION 21.3.0
 
-RUN mkdir /usr/local/lib/node_modules/pnpm && chmod 777 /usr/local/lib/node_modules/pnpm
+#RUN mkdir /usr/local/lib/node_modules/pnpm && chmod 777 /usr/local/lib/node_modules/pnpm
 
-RUN chown -R node:node /usr/local/lib/node_modules/
+#RUN chown -R node:node /usr/local/lib/node_modules/
 
 RUN mkdir /.pnpm && chmod 777 /.pnpm
 
@@ -18,14 +18,14 @@ RUN npm install -g pnpm@latest
 
 USER node
 
-WORKDIR /app
+WORKDIR /app/
 
-COPY package.json package-lock.json ./
-
-#RUN rm -f package.json package-lock.json
+COPY package*.json ./
 
 RUN pnpm install ci
 
-WORKDIR /app/test
+ENV PATH $PATH:/app/node_modules/.bin
 
-ENTRYPOINT ["pnpm","run", "test"]
+WORKDIR /app/test/
+
+ENTRYPOINT ["pnpm", "run","test"]
