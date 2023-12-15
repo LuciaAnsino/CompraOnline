@@ -1,23 +1,27 @@
-FROM node:bookworm-slim
+FROM debian:bookworm-slim
 
 LABEL maintainer="luciaansino@correo.ugr.es"\
       version="5.0.3"
 
-ENV NODE_VERSION 21.3.0
+RUN apt-get update \
+&& apt-get -y upgrade \
+&& apt-get install -y wget xz-utils which
+RUN wget https://nodejs.org/dist/v21.4.0/node-v21.4.0-linux-x64.tar.xz 
+RUN tar xvfJ node-v21.4.0-linux-x64.tar.xz 
+RUN cp -r node-v21.4.0-linux-x64/bin/* /usr/local/bin/
+RUN cp -r node-v21.4.0-linux-x64/lib/* /usr/local/lib/
+RUN corepack prepare pnpm@latest --activate \
+&& corepack install --global pnpm@latest \
+&& find /usr/ -name pnpm
 
-RUN mkdir /.pnpm && chmod 777 /.pnpm
+RUN useradd -ms /bin/bash node
 
-RUN mkdir -p /app/test && chown -R node:node /app
 
-USER root
-
-RUN npm install -g pnpm@latest
-
-USER node
+USER node 
 
 WORKDIR /app/
 
-COPY package*.json ./
+COPY package*.json pnpm-lock.yaml ./
 
 RUN pnpm install ci
 
