@@ -10,9 +10,7 @@ RUN wget https://nodejs.org/dist/v21.4.0/node-v21.4.0-linux-x64.tar.xz
 RUN tar xvfJ node-v21.4.0-linux-x64.tar.xz 
 RUN cp -r node-v21.4.0-linux-x64/bin/* /usr/local/bin/
 RUN cp -r node-v21.4.0-linux-x64/lib/* /usr/local/lib/
-RUN corepack prepare pnpm@latest --activate \
-&& corepack install --global pnpm@latest \
-&& find /usr/ -name pnpm
+RUN npm install -g pnpm@latest
 
 RUN useradd -ms /bin/bash node
 
