@@ -22,6 +22,20 @@ Para ejecutar los test para la extracción de la información de los tickets ele
 pnpm run test
 ```
 
+## Contenedor
+
+Para construir la imagen del contenedor debemos de lanzar:
+
+```bash
+docker build -t luciaansino/compraonline .
+```
+
+Y ejecutamos el contenedor:
+```bash
+docker run -tv `pwd`:/app/test luciaansino/compraonline
+```
+La imagen se encuentra en [Docker hub](https://hub.docker.com/repository/docker/luciaansino/compraonline/general)
+
 
 ## Claves de github
 
@@ -49,4 +63,5 @@ pnpm run test
 * Elección del runtime: [runtime](./docs/runtime.md)
 * Elección del gestor de dependencias: [gestor de dependencias](./docs/eleccion_gestor_dependencias.md)
 * Elección del gestor de tareas: [gestor de tareas](./docs/eleccion_gestor_tareas.md)
-* Elección del herramientas para test: [herramientas de test](./doc/eleccion_herramientas_test.md)
+* Elección del herramientas para test: [herramientas de test](./docs/eleccion_herramientas_test.md)
+* Elección de la imagen base para el contenedor: [imagen base](./docs/eleccion_imagen.md)
