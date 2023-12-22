@@ -15,7 +15,9 @@ Para elegir el CI tendremos en cuenta los siguientes criterios de elección:
 
 + [Travis](https://www.travis-ci.com): Tiene un buen ciclo de actualizaciones, es compatible con Docker y Github. Aunque hay que tener en cuenta que es de pago, pero tiene un formato de prueba gratuito en el que no te pide datos de pago.
 
-+ [TeamCity](https://www.jetbrains.com/teamcity/): Es compatible tanto con Docker como con GitHub. No obtstante tiene una versión con varias restricciones gratuita y otra más completa con un periodo de prueba gratuito. También, cabe destacar que que hace actualizaciones periódicas para aprovechar las nuevas funciones, mejoras y correcciones de seguridad.
++ [TeamCity](https://www.jetbrains.com/teamcity/): Es compatible tanto con Docker como con GitHub. No obtstante tiene una versión con varias restricciones gratuita y otra más completa con un periodo de prueba gratuito. También, cabe destacar que que hace actualizaciones periódicas para aprovechar las nuevas funciones, mejoras y correcciones de seguridad. NO obstnate hay que instalarlo en el portatil.
+
++ [AppVeyor](https://www.appveyor.com/docs/): Es completamente gratis y compatible con Dokcer y Github. Además, no ha sido usado por ningún compañero y está integrada en la nube.
 
 ## Decisión final
-Usaré dos herramientas CI, una de ellas es Github Action y la otra es TeamCity debido a que gracias al tiempo de prueba puedo usarlo durante un periodo de tiempo sin tener que pagar y es una herramienta que no ha sido usada por el resto de los compañeros.
+Usaré dos herramientas CI, una de ellas es Github Action y la otra es App Veyor debido a que es gratis, no ha sido usada aún por otros y se puede usar sin instalar ningún software adicional en tus máquinas locales.
