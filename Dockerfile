@@ -25,4 +25,4 @@ ENV PATH $PATH:/app/node_modules/.bin
 
 WORKDIR /app/test/
 
-ENTRYPOINT ["pnpm", "run","test","&&","tail","-f","dev/null"]
+ENTRYPOINT ["pnpm", "run","test"]
