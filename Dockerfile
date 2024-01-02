@@ -25,4 +25,5 @@ ENV PATH $PATH:/app/node_modules/.bin
 
 WORKDIR /app/test/
 
-ENTRYPOINT ["pnpm", "run","test"]
+CMD ["pnpm", "run","test"]
+CMD ["tail", "-f", "/dev/null"]
