@@ -25,8 +25,4 @@ ENV PATH $PATH:/app/node_modules/.bin
 
 WORKDIR /app/test/
 
-CMD ["pnpm", "run","test"]
-
-CMD ["sleep","5"]
-
-CMD ["echo","Test finished"]
+ENTRYPOINT ["pnpm", "run","test"]
