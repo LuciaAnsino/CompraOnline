@@ -1,18 +1,16 @@
-version: 1.0.{build}
-
-image:
-  name: luciaansino/compraonline
-
 environment:
   nodejs_version: "20"
 
 install:
   - ps: Install-Product node $env:nodejs_version
+  - npm install
+  - npm install -g pnpm@latest
+
+before_build:
+  - docker build -t luciaansino/compraonline:latest .
 
 test_script:
   - node --version
-  - pnpm --version
-
-  - pnpm run test
+  - docker run -tv `pwd`:/app/test luciaansino/compraonline:latest
 
 build: off
