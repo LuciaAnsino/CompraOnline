@@ -1,11 +1,13 @@
+version: 1.0.{build}
+
+image:
+  name: luciaansino/compraonline
+
 environment:
   nodejs_version: "20"
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install
-  - npm install -g pnpm@latest
-
 
 test_script:
   - node --version
