@@ -4,7 +4,7 @@ environment:
 install:
   - ps: Install-Product node $env:nodejs_version
 
-before_build:
+build_script:
   - docker build -t luciaansino/compraonline:latest .
 
 test_script:
