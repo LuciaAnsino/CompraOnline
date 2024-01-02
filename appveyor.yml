@@ -7,5 +7,5 @@ install:
 test_script:
   - node --version
   - docker
-  - docker run -tv %APPVEYOR_BUILD_FOLDER%:/app/test luciaansino/compraonline:latest tail -f /dev/null
+  - docker run -tv %APPVEYOR_BUILD_FOLDER%:/app/test luciaansino/compraonline:latest
 build: off
