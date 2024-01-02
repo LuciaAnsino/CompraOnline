@@ -27,4 +27,6 @@ WORKDIR /app/test/
 
 CMD ["pnpm", "run","test"]
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["sleep","5"]
+
+CMD ["echo","Test finished"]
