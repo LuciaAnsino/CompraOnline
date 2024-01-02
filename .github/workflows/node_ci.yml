@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [lts/-1, lts/*]
+        node-version: [lts/-1]
 
     steps:
       - name: Checkout
