@@ -11,6 +11,6 @@ before_build:
 
 test_script:
   - node --version
-  - docker run -tv `pwd`:/app/test luciaansino/compraonline:latest
+  - docker run -tv $(pwd):/app/test luciaansino/compraonline:latest
 
 build: off
