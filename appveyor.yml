@@ -6,7 +6,6 @@ install:
 
 test_script:
   - node --version
-  - docker build -t luciaansino/compraonline:latest .
-  - docker run -tv /app/test luciaansino/compraonline:latest
+  - docker run -tv %APPVEYOR_BUILD_FOLDER%/app/test luciaansino/compraonline:latest
 
 build: off
