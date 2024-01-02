@@ -7,5 +7,4 @@ install:
 test_script:
   - node --version
   - docker run -tv %APPVEYOR_BUILD_FOLDER%:/app/test luciaansino/compraonline:latest
-  - pause
 build: off
