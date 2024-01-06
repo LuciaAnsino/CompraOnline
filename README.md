@@ -65,3 +65,4 @@ La imagen se encuentra en [Docker hub](https://hub.docker.com/repository/docker/
 * Elección del gestor de tareas: [gestor de tareas](./docs/eleccion_gestor_tareas.md)
 * Elección del herramientas para test: [herramientas de test](./docs/eleccion_herramientas_test.md)
 * Elección de la imagen base para el contenedor: [imagen base](./docs/eleccion_imagen.md)
+* Elección de herramientas CI: [CI](./docs/eleccion_CI.md)
