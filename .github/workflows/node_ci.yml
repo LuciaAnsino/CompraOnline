@@ -20,11 +20,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install pnpm
-        run: npm install -g pnpm@latest
-
-      - name: Install dependencies
-        run: pnpm install ci
+      - name: Build Docker Image
+        run: docker build -t luciaansino/compraonline .
 
       - name: Run tests
-        run: pnpm run test
+        run: docker run -tv `pwd`:/app/test luciaansino/compraonline
