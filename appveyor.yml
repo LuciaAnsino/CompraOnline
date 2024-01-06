@@ -3,8 +3,11 @@ environment:
 
 install:
   - ps: Install-Product node $env:nodejs_version
+  - npm install
+  - npm install -g pnpm@latest
 
 test_script:
   - node --version
-  - docker run -tv %APPVEYOR_BUILD_FOLDER%:/app/test luciaansino/compraonline:latest
+  - pnpm run test
+  
 build: off
