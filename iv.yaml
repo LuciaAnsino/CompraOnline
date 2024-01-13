@@ -4,3 +4,7 @@ automatizar:
   fichero: package.json
   orden: pnpm run
 test: test/extraccion_info.ts
+
+CI:
+  - .github/workflows/node_ci.yml
+  - appveyor.yml
